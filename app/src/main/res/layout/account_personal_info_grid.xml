@@ -1,0 +1,198 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:id="@+id/add_grid">
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" android:layout_marginTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:typeface="serif"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:paddingEnd="10dp" />
+
+        <EditText           android:id="@+id/EditText02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" android:layout_marginTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/tv_firstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First Name"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:typeface="serif"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:paddingEnd="10dp" />
+
+        <EditText
+            android:id="@+id/Edit_firstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/tv_lastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Last Name"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:typeface="serif"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:paddingEnd="10dp" />
+
+        <EditText
+            android:id="@+id/Edit_lastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+        <TextView
+            android:id="@+id/tv_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Gender"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:typeface="serif"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:paddingEnd="10dp" />
+
+        <Spinner
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:spinnerMode="dropdown"
+            android:entries="@array/gender"/>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+        <TextView
+            android:id="@+id/tv_birthdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Birth Date"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:typeface="serif"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:paddingEnd="10dp" />
+
+        <DatePicker
+            android:id="@+id/datePicker1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|start"
+            android:calendarViewShown="false"
+            android:spinnersShown="true"
+            android:paddingStart="5dp" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:paddingEnd="10dp"
+            android:gravity="center_vertical" />
+
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="@dimen/activity_vertical_margin">
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="76dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/country_code"
+                android:spinnerMode="dropdown" />
+
+            <EditText
+                android:id="@+id/tv_phone_num"
+                android:layout_width="174dp"
+                android:layout_height="wrap_content"
+                android:inputType="phone"/>
+
+        </TableRow>
+
+    </TableRow>
+<TableRow>
+    <TextView
+        android:id="@+id/label_email_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Last Name"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:typeface="serif"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:paddingEnd="10dp" />
+
+    <EditText
+        android:id="@+id/tv_email_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"/>
+
+    </TableRow>
+
+</TableLayout>

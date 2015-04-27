@@ -1,0 +1,4 @@
+D:\DevWorkspace\androidsample\order-bridge-as\app\build\intermediates\classes\debug
+D:\DevWorkspace\androidsample\order-bridge-as\app\build\intermediates\pre-dexed\debug\bolts-android-1.2.0-ad8d3af82fae95428856b8268305d13b8d1c858b.jar
+D:\DevWorkspace\androidsample\order-bridge-as\app\build\intermediates\pre-dexed\debug\support-v4-18.0.0-ea722d07239539bde50766637f68f6caeb260088.jar
+D:\DevWorkspace\androidsample\order-bridge-as\app\build\intermediates\pre-dexed\debug\Parse-1.9.1-81d61b95306fcbe84e8177b041cad91b73b23bc3.jar

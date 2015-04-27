@@ -1,0 +1,65 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <style name="TextFieldFont" parent="@android:style/Widget.TextView">
+          <item name="android:textColor">@android:color/black</item>
+          <item name="android:typeface">normal</item>
+          <item name="android:textSize">15sp</item>
+          <item name="android:gravity">bottom|start</item>
+          <item name="android:ems">10</item>
+     </style>
+
+    <style name="TextFieldFontDisabled" parent="TextFieldFont">
+        <item name="android:textColor">@android:color/darker_gray</item>
+    </style>
+
+
+    <style name="editTextStyle" parent="@android:style/Widget.EditText">
+
+        <item name="android:typeface">normal</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">bottom|start</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">?android:attr/editTextBackground</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMediumInverse</item>
+        <item name="android:textColor">?android:attr/editTextColor</item>
+    </style>
+
+     <style name="FootMenuImageView" parent="@android:style/Widget.ImageButton">
+          <item name="android:background">#1E1921</item>        
+          <item name="android:textColor">#A85E4F</item>
+          <item name="android:textColorLink">#FFFFFF</item>
+          <item name="android:typeface">sans</item>
+     </style>
+<color name="Color_orange">#ff8a00</color>
+<color name="Color_redorange">#ff4444</color>
+<color name="Color_blue">#50c0e9</color>
+<color name="Color_lightblue">#8ad5f0</color>
+<color name="Color_purple">#cf9fe7</color>
+<color name="Color_green1">#92c500</color>
+<color name="Color_green2">#a8d324</color>
+<color name="Color_10">#6e6e6e</color>
+<color name="Color_11">#d8d8d8</color>
+<color name="Color_white">#ffffff</color>
+<color name="color_grey">#A4A4A4</color>
+     
+     
+</resources>
