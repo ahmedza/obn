@@ -163,7 +163,22 @@
             </RelativeLayout>
 
     </LinearLayout>
-
+    <ListView android:id="@+id/addressList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grid_bg"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_padding_start"
+        android:paddingStart="@dimen/activity_padding_start"
+        android:paddingRight="@dimen/activity_padding_end"
+        android:paddingEnd="@dimen/activity_padding_end"
+        android:paddingTop="@dimen/activity_padding_start"
+        android:paddingBottom="@dimen/activity_padding_bottom"
+        android:layout_below="@id/linearl_personal_info"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+    </ListView>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -175,7 +190,7 @@
         android:paddingEnd="@dimen/activity_padding_end"
         android:paddingTop="@dimen/activity_padding_start"
         android:paddingBottom="@dimen/activity_padding_bottom"
-        android:layout_below="@+id/linearl_personal_info"
+        android:layout_below="@+id/addressList"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="@dimen/activity_vertical_margin"
