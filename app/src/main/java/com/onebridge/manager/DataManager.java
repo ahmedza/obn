@@ -40,6 +40,10 @@ public class DataManager {
         return UserAddress.getUserAddress(userId);
     }
 
+    public List<UserAddress> getUserAddresses(String userId){
+
+        return UserAddress.getUserAddresses(userId);
+    }
 
 	protected static DataManager getDataManager(){
 		

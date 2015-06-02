@@ -12,7 +12,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:scrollbars="vertical">
+        android:scrollbars="vertical"
+    android:clickable="false">
 
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -22,11 +23,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Address"
+                android:text="Address - Home"
                 android:id="@+id/textView5" />
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/tv_EditText"
                 android:layout_alignParentRight="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -34,7 +35,9 @@
                 android:text="EDIT"
                 android:linksClickable="true"
                 android:textColor="@android:color/holo_blue_dark"
-                android:gravity="end" />
+                android:gravity="end"
+                android:onClick="editAddressInfo"
+                android:clickable="true" />
         </RelativeLayout>
 
         <LinearLayout
@@ -53,6 +56,15 @@
             android:layout_height="wrap_content"
             android:text="zahid@123"
             android:layout_marginTop="@dimen/activity_padding_start"/>
+        <EditText
+            style="@style/editTextStyle"
+            android:id="@+id/et_act_edit_careOf"
+            android:layout_alignParentRight="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_padding_start"
+            android:visibility="gone"
+            />
         <TextView
             style="@style/TextFieldFontDisabled"
             android:id="@+id/tv_act_edit_addline"
@@ -61,7 +73,15 @@
             android:text="Suite# 12, offices building, Davis Rd."
             android:layout_marginTop="@dimen/activity_padding_start"
             />
-
+    <EditText
+        style="@style/TextFieldFontDisabled"
+        android:id="@+id/et_act_edit_addline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Suite# 12, offices building, Davis Rd."
+        android:layout_marginTop="@dimen/activity_padding_start"
+        android:visibility="gone"
+        />
         <TextView
             style="@style/TextFieldFontDisabled"
             android:id="@+id/tv_act_edit_post_city"
@@ -69,6 +89,15 @@
             android:layout_height="wrap_content"
             android:text="Lahore"
             android:layout_marginTop="@dimen/activity_padding_start"/>
+
+    <EditText
+        style="@style/TextFieldFontDisabled"
+        android:id="@+id/et_act_edit_post_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lahore"
+        android:layout_marginTop="@dimen/activity_padding_start"
+        android:visibility="gone"/>
 
         <TextView
             style="@style/TextFieldFontDisabled"
@@ -79,22 +108,13 @@
             android:layout_marginTop="@dimen/activity_padding_start"
             />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/activity_padding_start"
-            android:background="@android:color/darker_gray"
-            android:layout_marginTop="@dimen/activity_padding_start" />
-
-        <TextView
-            style="@style/TextFieldFont"
-            android:id="@+id/add_address_link"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=" + Add New Address"
-            android:textColor="@android:color/holo_blue_dark"
-            android:layout_marginTop="@dimen/activity_padding_start"
-            android:textAlignment="center"
-            android:layout_gravity="center_horizontal"
-            />
-
+    <EditText
+        style="@style/TextFieldFontDisabled"
+        android:id="@+id/et_act_edit_province_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Punjab"
+        android:layout_marginTop="@dimen/activity_padding_start"
+        android:visibility="gone"
+        />
 </LinearLayout>
