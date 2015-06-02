@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/relativelout"
+
+    >
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/address_tl"
+        android:background="@drawable/grid_bg"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:paddingEnd="@dimen/activity_padding_end"
+        android:paddingRight="@dimen/activity_padding_end"
+        android:paddingBottom="@dimen/activity_padding_bottom"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        >
+
+    <!--   -->
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tr_edit_account_one"
+            android:paddingTop="@dimen/activity_padding_top">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="First Name"
+                android:id="@+id/textView"
+
+                android:layout_gravity="bottom"
+                android:textSize="15dp"
+                />
+
+            <EditText
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/et_edit_acc_fname"
+                android:inputType="textCapSentences"
+                style="@style/editTextStyle"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tableRow"
+            android:layout_marginTop="@dimen/activity_padding_top">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Last Name"
+                android:id="@+id/textView3"
+                android:textSize="15dp"></TextView>
+
+            <EditText
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_edit_acc_lname"
+                android:inputType="textCapSentences"
+                style="@style/editTextStyle"
+/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_padding_top">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Address"
+                android:id="@+id/textView4"
+                android:textSize="15dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="300dp"
+            android:layout_height="fill_parent">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_edit_acc_address"
+                android:inputType="textMultiLine"
+                android:layout_span="2"
+                android:maxLines="4"
+                android:maxLength="200"
+                style="@style/editTextStyle"
+                />
+
+        </TableRow>
+
+        <!--TableRow
+            android:layout_width="300dp"
+            android:layout_height="fill_parent">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText2"
+                android:inputType="textPostalAddress"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_span="2"
+                style="@style/editTextStyle"/>
+        </TableRow-->
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/activity_padding_top">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Postal Address"
+                android:id="@+id/textView41"
+                android:textSize="15dp"
+                android:layout_span="2"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="300dp"
+            android:layout_height="fill_parent"
+             >
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_edit_acc_postal"
+                android:inputType="textPostalAddress"
+                android:layout_span="2"
+                android:maxLines="4"
+                android:maxLength="200"
+                style="@style/editTextStyle"/>
+        </TableRow>
+
+        <!--TableRow
+            android:layout_width="300dp"
+            android:layout_height="fill_parent"
+             >
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText4"
+                android:inputType="textPostalAddress"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_span="2"
+                style="@style/editTextStyle"/>
+        </TableRow-->
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tr_edit_account_province"
+            android:layout_marginTop="@dimen/activity_padding_top">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Province"
+                android:id="@+id/textView_prov"
+                android:layout_gravity="bottom"
+                android:textSize="15dp" />
+
+            <Spinner
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner2"
+                android:spinnerMode="dropdown"
+                android:entries="@array/Prov"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tr_edit_account_city"
+            android:layout_marginTop="@dimen/activity_padding_top">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="City"
+                android:id="@+id/textView_city"
+
+                android:layout_gravity="bottom"
+                android:textSize="15dp" />
+
+            <Spinner
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerCity"
+                android:spinnerMode="dropdown"
+                android:entries="@array/city"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_padding_top">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Phone"
+                android:id="@+id/textView_phone"
+                android:layout_gravity="bottom"
+                android:textSize="15dp" />
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tr_edit_account_phone"
+                >
+                <Spinner
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spin_phone"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/country_code"/>
+                <EditText
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_phone_num"
+                    style="@style/editTextStyle"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    />
+            </TableRow>
+
+
+        </TableRow>
+
+
+    </TableLayout>
+</RelativeLayout><!-- From: file:/D:/DevWorkspace/androidsample/order-bridge-as/app/src/main/res/layout/account_address_edit.xml -->

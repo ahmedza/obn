@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:background="@drawable/grid_bg"
+        android:paddingLeft="@dimen/activity_padding_start"
+        android:paddingStart="@dimen/activity_padding_start"
+        android:paddingRight="@dimen/activity_padding_end"
+        android:paddingEnd="@dimen/activity_padding_end"
+        android:paddingTop="@dimen/activity_padding_start"
+        android:paddingBottom="@dimen/activity_padding_bottom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:scrollbars="vertical"
+    android:clickable="false">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_padding_top" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address - Home"
+                android:id="@+id/textView5" />
+
+            <TextView
+                android:id="@+id/tv_EditText"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="EDIT"
+                android:linksClickable="true"
+                android:textColor="@android:color/holo_blue_dark"
+                android:gravity="end"
+                android:onClick="editAddressInfo"
+                android:clickable="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/activity_padding_start"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="@dimen/activity_padding_top"
+            android:id="@+id/divider_ll"
+            android:orientation="vertical"/>
+
+        <TextView
+            style="@style/TextFieldFontDisabled"
+            android:id="@+id/tv_act_edit_careOf"
+            android:layout_alignParentRight="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="zahid@123"
+            android:layout_marginTop="@dimen/activity_padding_start"/>
+        <EditText
+            style="@style/editTextStyle"
+            android:id="@+id/et_act_edit_careOf"
+            android:layout_alignParentRight="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_padding_start"
+            android:visibility="gone"
+            />
+        <TextView
+            style="@style/TextFieldFontDisabled"
+            android:id="@+id/tv_act_edit_addline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Suite# 12, offices building, Davis Rd."
+            android:layout_marginTop="@dimen/activity_padding_start"
+            />
+    <EditText
+        style="@style/TextFieldFontDisabled"
+        android:id="@+id/et_act_edit_addline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Suite# 12, offices building, Davis Rd."
+        android:layout_marginTop="@dimen/activity_padding_start"
+        android:visibility="gone"
+        />
+        <TextView
+            style="@style/TextFieldFontDisabled"
+            android:id="@+id/tv_act_edit_post_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lahore"
+            android:layout_marginTop="@dimen/activity_padding_start"/>
+
+    <EditText
+        style="@style/TextFieldFontDisabled"
+        android:id="@+id/et_act_edit_post_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lahore"
+        android:layout_marginTop="@dimen/activity_padding_start"
+        android:visibility="gone"/>
+
+        <TextView
+            style="@style/TextFieldFontDisabled"
+            android:id="@+id/tv_act_edit_province_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Punjab"
+            android:layout_marginTop="@dimen/activity_padding_start"
+            />
+
+    <EditText
+        style="@style/TextFieldFontDisabled"
+        android:id="@+id/et_act_edit_province_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Punjab"
+        android:layout_marginTop="@dimen/activity_padding_start"
+        android:visibility="gone"
+        />
+</LinearLayout><!-- From: file:/D:/DevWorkspace/androidsample/order-bridge-as/app/src/main/res/layout/myaccount_addresses_layout.xml -->

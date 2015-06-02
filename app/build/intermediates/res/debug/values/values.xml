@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/D:/DevWorkspace/androidsample/order-bridge-as/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string-array name="Prov">
+        <item>Punjab</item>
+        <item>Balochistan</item>
+        <item>KPK</item>
+        <item>Sindh</item>
+    </string-array>
+    <string-array name="city">
+        <item>LHR</item>
+        <item>KHI</item>
+        <item>ISB</item>
+        <item>QUT</item>
+    </string-array>
+    <string-array name="country_code">
+        <item>+92</item>
+        <item>+971</item>
+        <item>+961</item>
+        <item>+44</item>
+        <item>+66</item>
+    </string-array>
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <!-- From: file:/D:/DevWorkspace/androidsample/order-bridge-as/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <color name="Color_10">#6e6e6e</color>
+    <color name="Color_11">#d8d8d8</color>
+    <color name="Color_blue">#50c0e9</color>
+    <color name="Color_green1">#92c500</color>
+    <color name="Color_green2">#a8d324</color>
+    <color name="Color_lightblue">#8ad5f0</color>
+    <color name="Color_orange">#ff8a00</color>
+    <color name="Color_purple">#cf9fe7</color>
+    <color name="Color_redorange">#ff4444</color>
+    <color name="Color_white">#ffffff</color>
+    <color name="color_grey">#A4A4A4</color>
+    <!-- From: file:/D:/DevWorkspace/androidsample/order-bridge-as/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_padding_bottom">10dp</dimen>
+    <dimen name="activity_padding_end">5dp</dimen>
+    <dimen name="activity_padding_start">5dp</dimen>
+    <dimen name="activity_padding_top">10dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/D:/DevWorkspace/androidsample/order-bridge-as/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">Order Bridge</string>
+    <string name="button1">Button Hello world!</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="hint_serach_categories">Search Categories</string>
+    <string name="home_menu">Home</string>
+    <string name="login">Login</string>
+    <string name="login_fb">Login with facebook</string>
+    <string name="message">Message Hello world!</string>
+    <string name="signup">Signup For Free</string>
+    <string name="signup_fb">Signup with facebook</string>
+    <string name="title_activity_account_edit">Edit Address</string>
+    <string name="title_activity_account_info">Account Info</string>
+    <string name="title_activity_category">Categories</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_product">ProductActivity</string>
+    <string name="title_item_CatgoryImage">Catgory Image</string>
+    <!-- From: file:/D:/DevWorkspace/androidsample/order-bridge-as/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="FootMenuImageView" parent="@android:style/Widget.ImageButton">
+          <item name="android:background">#1E1921</item>        
+          <item name="android:textColor">#A85E4F</item>
+          <item name="android:textColorLink">#FFFFFF</item>
+          <item name="android:typeface">sans</item>
+     </style>
+    <!-- From: file:/D:/DevWorkspace/androidsample/order-bridge-as/app/src/main/res/values/themes.xml -->
+    <eat-comment/>
+    <style name="MyActionBar" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/MyActionBarBackGround</item>
+        <item name="android:windowActionBarOverlay">false</item>
+    </style>
+    <style name="MyActionBarBackGround" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/actionbar_background</item>
+        
+    </style>
+    <!-- From: file:/D:/DevWorkspace/androidsample/order-bridge-as/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="TextFieldFont" parent="@android:style/Widget.TextView">
+          <item name="android:textColor">@android:color/black</item>
+          <item name="android:typeface">normal</item>
+          <item name="android:textSize">15sp</item>
+          <item name="android:gravity">bottom|start</item>
+          <item name="android:ems">10</item>
+     </style>
+    <style name="TextFieldFontDisabled" parent="TextFieldFont">
+        <item name="android:textColor">@android:color/darker_gray</item>
+    </style>
+    <style name="editTextStyle" parent="@android:style/Widget.EditText">
+
+        <item name="android:typeface">normal</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">bottom|start</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">?android:attr/editTextBackground</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMediumInverse</item>
+        <item name="android:textColor">?android:attr/editTextColor</item>
+    </style>
+</resources>
