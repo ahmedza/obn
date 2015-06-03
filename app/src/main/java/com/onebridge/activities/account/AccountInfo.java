@@ -58,7 +58,8 @@ public class AccountInfo extends Activity {
     }
 
     public void editPersonalInfo(View view){
-        Intent intent = new Intent(this,AccountEditActivity.class);
+//        Intent intent = new Intent(this,AccountEditActivity.class);
+        Intent intent = new Intent(this,AccountPersonalInfo.class);
         intent.putExtra("user", user);
 
         startActivity(intent);

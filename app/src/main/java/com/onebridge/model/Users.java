@@ -29,8 +29,9 @@ public class Users extends ParseObject implements Serializable{
             List<Users> users = getQuery(id).find();
 
             if(users != null && users.size() > 0){
-                ParseObject po_user = users.get(0);
-                setUserFields(user, po_user);
+                Users po_user = users.get(0);
+                setUserFields(po_user, po_user);
+                user = po_user;
             }
         } catch (ParseException e) {
             e.printStackTrace();
@@ -59,6 +60,8 @@ public class Users extends ParseObject implements Serializable{
 
     public void setEmail(String email) {
         this.email = email;
+        put("email",email);
+
     }
 
     public String getGender() {
@@ -67,6 +70,7 @@ public class Users extends ParseObject implements Serializable{
 
     public void setGender(String gender) {
         this.gender = gender;
+        put("gender",gender);
     }
 
     public String getFname() {
@@ -75,6 +79,8 @@ public class Users extends ParseObject implements Serializable{
 
     public void setFname(String fname) {
         this.fname = fname;
+        put("firstName",fname);
+
     }
 
     public String getLname() {
@@ -83,6 +89,7 @@ public class Users extends ParseObject implements Serializable{
 
     public void setLname(String lname) {
         this.lname = lname;
+        put("lastName",lname);
     }
 
     public String getUsername() {

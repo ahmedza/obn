@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-        android:background="@drawable/grid_bg"
+
         android:paddingLeft="@dimen/activity_padding_start"
         android:paddingStart="@dimen/activity_padding_start"
         android:paddingRight="@dimen/activity_padding_end"
@@ -42,7 +42,7 @@
 
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="@dimen/activity_padding_start"
+            android:layout_height="1dp"
             android:background="@android:color/darker_gray"
             android:layout_marginTop="@dimen/activity_padding_top"
             android:id="@+id/divider_ll"
@@ -82,13 +82,20 @@
         android:layout_marginTop="@dimen/activity_padding_start"
         android:visibility="gone"
         />
-        <TextView
+    <TextView
             style="@style/TextFieldFontDisabled"
             android:id="@+id/tv_act_edit_post_city"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Lahore"
-            android:layout_marginTop="@dimen/activity_padding_start"/>
+            android:layout_marginTop="@dimen/activity_padding_start"
+        android:visibility="gone"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerCity"
+        android:spinnerMode="dropdown"
+        android:entries="@array/city"/>
 
     <EditText
         style="@style/TextFieldFontDisabled"
@@ -106,8 +113,14 @@
             android:layout_height="wrap_content"
             android:text="Punjab"
             android:layout_marginTop="@dimen/activity_padding_start"
+            android:visibility="gone"
             />
-
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerProv"
+        android:spinnerMode="dropdown"
+        android:entries="@array/Prov"/>
     <EditText
         style="@style/TextFieldFontDisabled"
         android:id="@+id/et_act_edit_province_country"
